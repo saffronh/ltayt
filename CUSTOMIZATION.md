@@ -1,85 +1,110 @@
 # CSS Customization Guide
 
-Now all your styling is in ONE FILE: `styles.css`
+Your site now has a refined, literary aesthetic with elegant typography and subtle colors.
 
-## Quick Changes
+## Design Philosophy
 
-### Colors
+**Colors:** Muted, sophisticated palette
+- Off-white background (#fdfbf7)
+- Warm taupe borders (#d4c9bd)
+- Rich brown text (#2b2b2b)
+- Subtle brown links (#6b5947)
+
+**Typography:** Classic book-style fonts
+- Libre Baskerville for headings (elegant serif)
+- Source Serif 4 for body text (readable, refined)
+
+## Quick Customization
+
+### Color Palette
 ```css
-/* Line 8-10: Main colors */
-background-color: #ede8df;  /* Background - try #ffffff for white, #1a1a1a for dark */
-color: #1a1a1a;             /* Text color */
+/* Lines 10-14: Main colors */
+background: #fdfbf7;        /* Off-white - try #ffffff for pure white */
+color: #2b2b2b;             /* Dark brown text */
 
-/* Line 34, 52: Link colors */
-color: #5050ff;             /* Blue links - try #ff5050 for red, #50ff50 for green */
+/* Line 17: Border color */
+border-right: 1px solid #d4c9bd;  /* Taupe border */
+
+/* Line 70: Link color */
+color: #6b5947;             /* Brown links - try #2c5f2d for green, #4a5568 for gray */
+```
+
+### Alternative Color Schemes
+
+**Pure Minimalist:**
+```css
+background: #ffffff;
+color: #000000;
+border: #e0e0e0;
+links: #333333;
+```
+
+**Warm Cream:**
+```css
+background: #faf8f3;
+color: #3d3d3d;
+border: #d9cfc0;
+links: #8b6f47;
+```
+
+**Cool Gray:**
+```css
+background: #f8f9fa;
+color: #2d3748;
+border: #cbd5e0;
+links: #4a5568;
 ```
 
 ### Fonts
-```css
-/* Line 7: Main font */
-font-family: Georgia, 'Times New Roman', serif;
 
-/* Try these alternatives:
-   'Helvetica Neue', Arial, sans-serif
-   'Courier New', monospace
-   'Palatino', 'Book Antiqua', serif
-*/
+**Current fonts (line 1):**
+- Libre Baskerville (headings)
+- Source Serif 4 (body)
+
+**Try these alternatives:**
+```css
+/* Classic Editorial */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Crimson+Text&display=swap');
+font-family: 'Crimson Text', Georgia, serif;  /* body */
+font-family: 'Cormorant Garamond', serif;     /* headings */
+
+/* Modern Serif */
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&family=Spectral&display=swap');
+font-family: 'Spectral', Georgia, serif;
+font-family: 'Newsreader', serif;
+
+/* Contemporary */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+font-family: 'Inter', -apple-system, sans-serif;
 ```
 
-### Sizes
+### Spacing & Sizes
+
 ```css
-/* Line 66: Main title size */
-font-size: 48px;
+/* Line 66: Main title */
+font-size: 42px;            /* Make bigger (48px) or smaller (36px) */
 
-/* Line 82: Body text size */
-font-size: 18px;
+/* Line 96: Body text */
+font-size: 17px;            /* Standard is 16-18px */
+line-height: 1.75;          /* 1.6-1.8 is comfortable */
 
-/* Line 23: Sidebar width (also change line 60!) */
-width: 420px;
+/* Line 11: Sidebar width */
+width: 380px;               /* Also change line 62! */
 ```
 
-## How to Use
+## What Makes This Design Classy
 
-1. Edit `styles.css` in any text editor
-2. Save your changes
-3. Refresh your browser - ALL pages update automatically!
-4. No need to edit individual HTML files anymore
+1. **Restrained color palette** - Only browns and taupes, no bright colors
+2. **Generous whitespace** - Lots of breathing room
+3. **Classic typography** - Book-style serif fonts
+4. **Subtle details** - Delicate borders, gentle underlines
+5. **Refined hierarchy** - Clear but not overwhelming
 
-## Testing Locally
+## Testing Your Changes
 
-1. Open any HTML file in your browser (just double-click it)
-2. Edit `styles.css`
-3. Save and refresh the browser
-4. Repeat until it looks perfect!
+1. Edit `styles.css`
+2. Save
+3. Refresh browser (Cmd+R or Ctrl+R)
+4. All pages update instantly!
 
-## Popular Color Schemes
-
-### Dark Mode
-```css
-background-color: #1a1a1a;
-color: #ede8df;
-Link color: #7a9cff;
-```
-
-### Minimalist White
-```css
-background-color: #ffffff;
-color: #000000;
-Link color: #0066cc;
-```
-
-### Warm Beige (current)
-```css
-background-color: #ede8df;
-color: #1a1a1a;
-Link color: #5050ff;
-```
-
-### Cool Gray
-```css
-background-color: #f5f5f5;
-color: #333333;
-Link color: #2e7d32;
-```
-
-Just change the values in `styles.css` and all 6 pages update instantly!
+No need to touch the HTML files - ever!
